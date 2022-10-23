@@ -22,6 +22,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
+    // zircon
     public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
@@ -45,6 +46,13 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(4,8)), ModCreativeModeTab.TUTORIAL_TAB);
+
+
+    // aranarium
+    public static final RegistryObject<Block> ARANARIUM_ORE = registerBlock("aranarium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3,6)), ModCreativeModeTab.ARANARIUM_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      CreativeModeTab tab) {

@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "tutorialmod:zircon_ore"
+              "name": "tutorialmod:aranarium_ore"
             },
             {
               "type": "minecraft:item",
@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "tutorialmod:raw_zircon"
+              "name": "tutorialmod:raw_aranarium"
             }
           ]
         }
